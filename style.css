@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.red-btn{
+    color: white;
+    font-weight: 600;
+    background-color: #bd1241;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    transition: .5s;
+    box-shadow: 0 0 15px 0 #bd1241;
+}
+
+.red-btn:hover{
+    transition: .5s;
+    border-radius: 50px;
+    background-color: #3a3e48;
+    box-shadow: 0 0 0 0 black;
+}
+
+.nav-elements a{
+    transition: .4s;
+}
+
+.nav-elements a:hover{
+    color: white;
+    transition: .4s;
+}
+
+.icon{
+    transition: .4s;
+}
+
+.icon:hover{
+    margin-top: -10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+.fade-in{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .4s;
+    opacity: 50%;
+    filter: blur(3px);
+}
+
+.fade-in:hover{
+    scale: 1.025;
+    transition: .4s;
+    background-color: transparent;
+    opacity: 100%;
+    cursor: pointer;
+    filter: blur(0px);
+}
+
+.hide-on-pc{
+    display: none;
+}
+
+.hide-on-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    
+    .hide-on-mobile{
+        display: none;
+    }
+    
+    .fade-in{
+        filter: blur(0px);
+        opacity: 100%;
+    }
+
+    .hide-on-pc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .red-btn{
+        padding: 7px 10px;  
+    }
+
+}
